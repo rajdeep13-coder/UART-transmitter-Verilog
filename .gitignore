@@ -1,0 +1,71 @@
+# Simulation outputs
+*.vcd
+*.vvp
+*.log
+*.out
+*.jou
+*.wdb
+*.wcfg
+*.str
+transcript
+
+# Python / shell cache
+__pycache__/
+*.pyc
+
+# Build / temp
+build/
+dist/
+*.swp
+*.swo
+
+# Editor / OS
+.vscode/
+*.tmp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# FPGA build outputs
+fpga/vivado_project/**/.Xil/
+fpga/vivado_project/**/*.cache/
+fpga/vivado_project/**/*.runs/
+fpga/vivado_project/**/*.gen/
+fpga/vivado_project/**/*.ip_user_files/
+fpga/vivado_project/**/*.sim/
+fpga/vivado_project/**/*.hw/
+fpga/vivado_project/**/*.srcs/
+fpga/vivado_project/**/*.xpr
+fpga/vivado_project/**/*.ltx
+fpga/vivado_project/**/*.bit
+fpga/vivado_project/**/*.bin
+fpga/vivado_project/**/*.dcp
+fpga/vivado_project/**/*.xml
+
+fpga/quartus_project/**/*.qdb/
+fpga/quartus_project/**/*.rpt
+fpga/quartus_project/**/*.sof
+fpga/quartus_project/**/*.pof
+fpga/quartus_project/**/*.smsg
+fpga/quartus_project/**/*.summary
+fpga/quartus_project/**/*.jdi
+fpga/quartus_project/**/*.pin
+fpga/quartus_project/**/*.sof.rbf
+fpga/quartus_project/**/*.rbf
+fpga/quartus_project/**/*.map
+fpga/quartus_project/**/*.fit
+fpga/quartus_project/**/*.sta
+fpga/quartus_project/**/*.asm
+
+# Vendor database folders
+db/
+incremental_db/
+
+# General archive artifacts
+*.zip
+*.tar
+*.gz
+
+# Keep folder placeholders
+!fpga/vivado_project/.gitkeep
+!fpga/quartus_project/.gitkeep
