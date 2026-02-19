@@ -1,10 +1,26 @@
 # UART-Tx (Verilog UART TX/RX)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Contributing](https://img.shields.io/badge/Contributions-Welcome-blue.svg)](CONTRIBUTING.md)
-[![Docs](https://img.shields.io/badge/Docs-Available-orange.svg)](docs/)
+[![Domain](https://img.shields.io/badge/Domain-VLSI-blueviolet.svg)](#)
+[![HDL](https://img.shields.io/badge/HDL-Verilog-blue.svg)](#)
+[![Simulation CI](https://github.com/<owner>/<repo>/actions/workflows/sim-ci.yml/badge.svg)](https://github.com/<owner>/<repo>/actions/workflows/sim-ci.yml)
 
 Compact UART transmitter/receiver RTL with parity support, loopback simulation, and FPGA project scaffolding for Vivado/Quartus flows.
+
+## Project Summary
+
+This project implements a reusable UART (Universal Asynchronous Receiver/Transmitter) communication core in Verilog, including both transmit (TX) and receive (RX) paths. It converts parallel bytes to serial UART frames and reconstructs received serial frames back into bytes, with optional parity checking and framing/parity error reporting.
+
+It is useful for:
+
+- Learning digital communication protocol design in RTL
+- Integrating serial debug/command interfaces in FPGA projects
+- Serving as a clean reference design for UART timing, framing, and verification flow
+
+Core functions provided:
+
+- UART byte transmission with configurable baud and oversampling
+- UART byte reception with start-bit validation and error flags
+- Loopback testbench and script-based simulation workflow for quick validation
 
 ## Features
 
