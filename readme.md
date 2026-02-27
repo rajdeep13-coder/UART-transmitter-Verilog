@@ -49,11 +49,13 @@ UART-Tx/
 
 - Icarus Verilog (`iverilog`, `vvp`)
 - GTKWave (optional, for waveform viewing)
+- Python 3.6+ and `cocotb` (for Python-based testbenches)
 
 ### Windows install (Chocolatey)
 
 ```powershell
 choco install iverilog gtkwave -y
+pip install cocotb pytest
 ```
 
 ### Icarus install troubleshooting (Windows)
@@ -118,6 +120,17 @@ Open waveform:
 cd sim
 make wave
 ```
+
+### Option C: Cocotb Python Testbenches
+
+This project includes Python-based testing using Cocotb for randomized testing and edge-case generation.
+
+```bash
+cd test
+make
+```
+
+This will run the `test_uart.py` testbench using Icarus Verilog and output the results to the console.
 
 ## UART Timing Notes
 
